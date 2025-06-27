@@ -29,11 +29,11 @@ public final class Board {
 
     @Override
     public String toString() {
-        String result = "Board{\n";
-        for (int i = 0; i < data.length; i++) {
-            result += Arrays.toString(data[i]) + "\n";
+        StringBuilder result = new StringBuilder("Board{\n");
+        for (int[] datum : data) {
+            result.append(Arrays.toString(datum)).append("\n");
         }
-        result += "}";
-        return result;
+        result.append("}");
+        return result.toString();
     }
 }

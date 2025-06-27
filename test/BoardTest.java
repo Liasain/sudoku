@@ -59,7 +59,7 @@ public class BoardTest {
         Board b2 = new Board();
         b.set(1, 2, 3);
         b2.set(1, 2, 3);
-        assertTrue(b.equals(b2));
+        assertEquals(b, b2);
         assertEquals(b.hashCode(), b2.hashCode());
     }
 
@@ -69,7 +69,7 @@ public class BoardTest {
         Board b2 = new Board();
         b.set(1, 2, 3);
         b2.set(1, 2, 4);
-        assertFalse(b.equals(b2));
+        assertNotEquals(b, b2);
         assertNotEquals(b.hashCode(), b2.hashCode());
     }
 }
