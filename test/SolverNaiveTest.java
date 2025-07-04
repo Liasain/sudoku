@@ -3,7 +3,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-class SolverTest {
+class SolverNaiveTest {
 
     Board b0;
     Board b1;
@@ -17,7 +17,7 @@ class SolverTest {
         b1 = new Board();
         p = new Parser();
         v = new Validator();
-        s = new Solver();
+        s = new SolverNaive();
     }
 
     @Test
